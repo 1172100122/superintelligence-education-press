@@ -1,0 +1,59 @@
+{
+  "title": "差一点，还是等于？",
+  "duration": 394.6666666666667,
+  "video": "film.mp4",
+  "poster": "poster.jpg",
+  "captions": "film.zh-CN.vtt",
+  "transcript": "film-script.txt",
+  "chapters": [
+    {
+      "id": "chapter-1",
+      "title": "两条计算路线",
+      "start": 0.0,
+      "end": 43.7,
+      "animation_start_index": 0
+    },
+    {
+      "id": "chapter-2",
+      "title": "每一步，还差多少",
+      "start": 43.7,
+      "end": 82.9,
+      "animation_start_index": 15
+    },
+    {
+      "id": "chapter-3",
+      "title": "把追赶切成无穷段",
+      "start": 82.9,
+      "end": 150.16666666666666,
+      "animation_start_index": 34
+    },
+    {
+      "id": "chapter-4",
+      "title": "时间与小数，接上了",
+      "start": 150.16666666666666,
+      "end": 204.96666666666667,
+      "animation_start_index": 60
+    },
+    {
+      "id": "chapter-5",
+      "title": "省略号所表示的数",
+      "start": 204.96666666666667,
+      "end": 283.3666666666667,
+      "animation_start_index": 80
+    },
+    {
+      "id": "chapter-6",
+      "title": "一的左边，有最近的数吗",
+      "start": 283.3666666666667,
+      "end": 336.7,
+      "animation_start_index": 110
+    },
+    {
+      "id": "chapter-7",
+      "title": "写不完，仍然有确定的值",
+      "start": 336.7,
+      "end": 394.6666666666667,
+      "animation_start_index": 130
+    }
+  ]
+}

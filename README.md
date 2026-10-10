@@ -2,15 +2,24 @@
 
 **超级智能教育出版社 · Superintelligence Education Press**
 
-这里收录用 AI 制作的 HTML 教育动画。从一个值得琢磨的问题出发，用画面和解说，一步步展开思考。每部作品都可以下载到本地，在浏览器里打开，不用安装软件。
+这里收录用 AI 制作的教育动画。从一个值得琢磨的问题出发，用画面和解说，一步步展开思考。可以在网页里观看，也可以下载影片离线观看。
 
 ## 第一部：差一点，还是等于？
 
 0.999… 和 1 之间，到底是什么关系？
 
-这部约 7 分钟的动画，从一个直觉选择开始，串起 1/3、阿基里斯追龟与极限。先选出你心中的答案，再跟着动画看看：那些看似熟悉的数字，为什么会让人犹豫？
+新版是一部约 6 分 35 秒的 Manim 数学电影，共七幕，串起 1/3、有限小数、阿基里斯追龟与极限。先留下你心中的答案，再跟着连续的画面与中文讲解，看看那些看似熟悉的数字，为什么会让人犹豫。
 
-[查看作品文件](works/limits/index.html)。下载 `works/limits/index.html` 后，用浏览器打开；选择一次 `<`、`=` 或 `>`，后续解说与动画会自动播放。
+[在线观影](https://1172100122.github.io/superintelligence-education-press/works/limits/) · [作品目录](https://1172100122.github.io/superintelligence-education-press/)
+
+- 完整中文讲解与可开关的中文字幕
+- 默认连续播放，可以跳转至任意一幕
+- 支持上一幕、下一幕与本幕重播；重播在幕末暂停
+- [下载 MP4](https://1172100122.github.io/superintelligence-education-press/works/limits/film.mp4) · [阅读讲解文稿](works/limits/film-script.txt) · [字幕文件](works/limits/film.zh-CN.vtt)
+
+旧版单文件动画保留在 [legacy.html](works/limits/legacy.html)，下载后仍可直接用浏览器打开。
+
+看完后还有疑问，欢迎到 [GitHub Issues](https://github.com/1172100122/superintelligence-education-press/issues) 留下问题。
 
 ## 关于这次制作
 
