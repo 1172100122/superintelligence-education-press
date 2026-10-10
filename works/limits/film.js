@@ -329,7 +329,7 @@
       try {
         if (!manifest) {
           manifestTimer = setTimeout(() => activeAborter.abort(), 30000);
-          const response = await fetch(manifestURL, { signal: activeAborter.signal, credentials: 'same-origin' });
+          const response = await fetch(manifestURL, { signal: activeAborter.signal, credentials: 'same-origin', cache: 'no-store' });
           if (!response.ok) throw new Error(`Manifest HTTP ${response.status}`);
           const raw = await response.json();
           if (token !== loadToken || destroyed) return;
