@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#17131f">
   <meta name="description" content="从写不完的小数，到一步步缩短的追赶。七幕 Manim 数学电影，完整中文讲解。">
   <title>差一点，还是等于？ · SIEP 智教版</title>
-  <link rel="stylesheet" href="film.css">
+  <link rel="stylesheet" href="film.css?v=opening-layout-v2">
   <script src="film.js?v=audio-v2" defer></script>
 </head>
 <body>
@@ -20,19 +20,21 @@
     <section class="intro" aria-labelledby="film-title">
       <div class="intro-copy">
         <p class="eyebrow">一个小数，一场追赶，一次看懂极限</p>
-        <h1 id="film-title">差一点，<br>还是等于？</h1>
-        <p class="lede">从写不完的九出发。<br>让画面和时间，一起把问题说清楚。</p>
+        <h1 id="film-title">差一点，还是等于？</h1>
+        <p class="lede">从写不完的九出发，让画面和时间一起把问题说清楚。</p>
       </div>
       <div class="opening" id="opening-choice" aria-labelledby="choice-title">
         <p class="eyebrow" id="choice-title">开始之前，留下你的直觉</p>
         <p class="opening-equation" aria-label="零点九循环，与一的大小关系是什么">0.999… <span class="question-mark" aria-hidden="true">?</span> 1</p>
-        <div class="choice-buttons" aria-label="选择一个符号并开始电影">
+        <div class="choice-buttons" role="group" aria-label="选择一个符号并开始电影">
           <button type="button" data-choice="less" aria-label="我的直觉是小于，开始电影">&lt;</button>
           <button type="button" data-choice="equal" aria-label="我的直觉是等于，开始电影">=</button>
           <button type="button" data-choice="greater" aria-label="我的直觉是大于，开始电影">&gt;</button>
         </div>
-        <p class="choice-note">先不揭晓。带着你的判断，往下看。</p>
-        <button type="button" class="text-button" id="skip-choice">先看电影，再想一想 →</button>
+        <div class="choice-footer">
+          <p class="choice-note">点击一个符号开始电影。先不揭晓，带着判断往下看。</p>
+          <button type="button" class="text-button" id="skip-choice">先看电影，再想一想 →</button>
+        </div>
       </div>
     </section>
     <section class="film-layout" aria-label="完整电影与章节">
