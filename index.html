@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="SIEP · 智教版，超级智能教育出版社的互动教育作品目录。用动画与交互，一起探索值得理解的知识。">
+  <title>SIEP · 智教版｜超级智能教育出版社</title>
+  <style>
+    :root { color-scheme: dark; --bg:#101412; --panel:#181f1b; --ink:#f0f2e9; --muted:#aeb9b0; --line:#364139; --accent:#c8ee9c; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--ink); font-family:system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif; line-height:1.7; }
+    a { color:inherit; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:7px; }
+    .skip { position:absolute; top:-80px; left:24px; padding:10px 18px; background:var(--accent); color:var(--bg); z-index:10; }
+    .skip:focus { top:16px; }
+    .wrap { width:min(1120px,calc(100% - 96px)); margin-inline:auto; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:24px; padding-block:28px; border-bottom:1px solid var(--line); }
+    .brand { display:flex; align-items:center; gap:13px; text-decoration:none; font-size:17px; font-weight:700; letter-spacing:.025em; }
+    .mark { display:grid; grid-template-columns:repeat(3,5px); gap:4px; align-items:end; height:27px; }
+    .mark i { background:var(--accent); height:21px; border-radius:1px; }
+    .mark i:nth-child(2) { height:27px; }.mark i:nth-child(3) { height:24px; transform:rotate(-13deg); transform-origin:bottom; }
+    nav a { color:var(--muted); font-size:14px; text-decoration:none; padding:8px 0; }
+    nav a:hover { color:var(--ink); }
+    .hero { padding:92px 0 80px; max-width:840px; }
+    .eyebrow { margin:0 0 22px; color:var(--accent); font-size:12px; letter-spacing:.2em; text-transform:uppercase; }
+    h1 { font-size:clamp(32px,4.8vw,58px); font-weight:550; line-height:1.35; letter-spacing:-.035em; margin:0 0 12px; }
+    .english { font-size:clamp(15px,2vw,20px); color:var(--muted); margin:0; font-weight:400; letter-spacing:.025em; }
+    .intro { color:var(--muted); font-size:17px; margin:32px 0 0; max-width:590px; }
+    .section-head { display:flex; gap:16px; justify-content:space-between; align-items:baseline; border-top:1px solid var(--line); padding-top:24px; margin-bottom:26px; }
+    h2 { font-size:20px; margin:0; font-weight:600; }
+    .count { font-size:12px; color:var(--muted); letter-spacing:.12em; }
+    .catalog { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:26px; }
+    .work { border:1px solid var(--line); border-radius:18px; overflow:hidden; background:var(--panel); }
+    .work-link { display:block; text-decoration:none; height:100%; }
+    .work:focus-within { outline:3px solid var(--accent); outline-offset:5px; }
+    .work-link:focus-visible { outline:none; }
+    .cover { position:relative; height:232px; overflow:hidden; background:radial-gradient(ellipse at 70% 70%,#3c5743 0,transparent 60%),#202d25; }
+    .cover::before { content:""; position:absolute; width:200px; height:200px; border:1px solid #8fa885; border-radius:50%; left:calc(50% - 121px); top:15px; }
+    .cover::after { content:""; position:absolute; width:134px; height:134px; border:1px solid var(--accent); border-radius:50%; left:calc(50% - 18px); top:77px; background:#c8ee9c0c; }
+    .cover-label { position:absolute; left:25px; top:20px; font-size:11px; letter-spacing:.16em; color:#d4e0cf; }
+    .cover-dot { position:absolute; left:calc(50% + 106px); top:147px; width:11px; height:11px; background:var(--accent); border-radius:50%; }
+    .work-body { padding:27px 28px 25px; }
+    .meta { display:flex; align-items:center; gap:10px; font-size:12px; color:var(--accent); margin:0 0 13px; }
+    .meta span+span::before { content:"·"; margin-right:10px; color:var(--muted); }
+    h3 { font-size:26px; font-weight:600; line-height:1.4; letter-spacing:-.025em; margin:0 0 12px; }
+    .description { margin:0; font-size:15px; color:var(--muted); }
+    .open { display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--line); margin-top:25px; padding-top:18px; font-size:14px; }
+    .arrow { color:var(--accent); font-size:23px; line-height:1; transition:transform .2s ease; }
+    .work-link:hover .arrow { transform:translateX(5px); }
+    .work-link:hover h3 { color:var(--accent); }
+    .catalog-note { margin:27px 0 0; color:var(--muted); font-size:13px; }
+    footer { border-top:1px solid var(--line); margin-top:82px; padding:27px 0 36px; display:flex; justify-content:space-between; gap:12px; color:var(--muted); font-size:12px; }
+    footer p { margin:0; }
+    @media(min-width:900px) { .hero { padding-block:98px 87px; } }
+    @media(max-width:680px) { .wrap { width:calc(100% - 40px); } header { padding-block:22px; } .brand { font-size:15px; } .hero { padding-block:62px 55px; } .intro { font-size:16px; } .catalog { grid-template-columns:1fr; } .cover { height:220px; } .work-body { padding:24px; } h3 { font-size:25px; } footer { margin-top:60px; flex-direction:column; } }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .arrow { transition:none; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#catalog">跳至作品目录</a>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="./index.html" aria-label="SIEP 智教版首页"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>SIEP · 智教版</a>
+      <nav aria-label="主导航"><a href="#catalog">作品目录 ↗</a></nav>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="publisher-title">
+        <p class="eyebrow" lang="en">An invitation to explore</p>
+        <h1 id="publisher-title">超级智能教育出版社</h1>
+        <p class="english" lang="en">Superintelligence Education Press</p>
+        <p class="intro">让知识动起来，让好奇心走得更远。<br>从一段动画、一次交互，开始理解一个新世界。</p>
+      </section>
+      <section id="catalog" aria-labelledby="catalog-title">
+        <div class="section-head"><h2 id="catalog-title">作品目录</h2><span class="count">01 / 互动作品</span></div>
+        <div class="catalog">
+          <!-- 新作品：复制下方 article，更新链接、标题、分类和简介。 -->
+          <article class="work">
+            <a class="work-link" href="works/limits/index.html" aria-labelledby="limits-title" aria-describedby="limits-description">
+              <div class="cover" aria-hidden="true"><span class="cover-label">SIEP / 001</span><span class="cover-dot"></span></div>
+              <div class="work-body">
+                <p class="meta"><span>数学</span><span>互动动画</span></p>
+                <h3 id="limits-title">差一点，还是等于？</h3>
+                <p class="description" id="limits-description">关于极限的一场探索。跟随动画与讲解，亲手试一试，再形成自己的直觉。</p>
+                <div class="open"><span>打开作品</span><span class="arrow" aria-hidden="true">↗</span></div>
+              </div>
+            </a>
+          </article>
+        </div>
+        <p class="catalog-note">新的探索，将陆续收录于此。</p>
+      </section>
+    </main>
+    <footer><p>SIEP · 智教版</p><p>动画 · 交互 · 探索</p></footer>
+  </div>
+</body>
+</html>
