@@ -21,6 +21,14 @@
 
 看完后还有疑问，欢迎到 [GitHub Issues](https://github.com/1172100122/superintelligence-education-press/issues) 留下问题。
 
+## AI 的证明 · 第一集：幻觉还是神谕？
+
+一部约 11 分 48 秒的中文教育影片。跟随一份证明，从素数走到 Lean，看看推理为何可信，以及检查到底检查了什么。黑板与小稿纸上的线索，串起十二个章节。
+
+[在线观影](https://1172100122.github.io/superintelligence-education-press/works/ai-proof-episode-1/) · [下载 MP4](https://1172100122.github.io/superintelligence-education-press/works/ai-proof-episode-1/episode01-v2-f790f5638a15.mp4) · [中文字幕](works/ai-proof-episode-1/episode01_zh.vtt)
+
+影片文件待上传，网页暂不能播放。上传完成后支持章节跳转、重播与同步文字。研究图像和延伸阅读的来源见播放页；第三方图像的权利归原权利人。
+
 ## 关于这次制作
 
 本项目使用 Dots 的免费额度完成制作。就这次尝试而言，动画表现与 Claude 相比还有差距，不过胜在成本低。

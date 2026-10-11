@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="AI 的证明：幻觉还是神谕？一部约 11 分 48 秒的中文教育影片，跟随数学推理与 Lean，探索证明为何可信。">
+  <title>AI 的证明 · 第一集 | SIEP 智教版</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="timing-data.js" defer></script>
+  <script src="media-loader.js" defer></script>
+  <script src="player.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#player">跳到播放器</a>
+  <header class="site-header">
+    <a class="wordmark" href="../../" aria-label="返回 SIEP 智教版作品目录">
+      <span class="brand-mark" aria-hidden="true">S</span>
+      <span class="brand-name">SIEP <span class="brand-divider">/</span> <span class="brand-zh">智教版</span></span>
+    </a>
+    <span class="edition"><span aria-hidden="true"></span>第一集 · 影片待上传</span>
+  </header>
+
+  <main id="top">
+    <section class="intro" aria-labelledby="film-title">
+      <div>
+        <p class="eyebrow">AI 的证明 <span aria-hidden="true">/</span> 第一集</p>
+        <h1 id="film-title">幻觉，还是<span>神谕？</span></h1>
+        <p class="intro-copy">影片文件尚在上传，请稍后再来。<br>跟随一份证明，看看它究竟凭什么让人相信。</p>
+      </div>
+      <div class="film-meta" aria-label="影片信息">
+        <span><strong id="chapter-total">12</strong> 章节</span>
+        <span><strong id="film-duration">—</strong> <span id="duration-label">片长</span></span>
+        <span>中文旁白 · 字幕</span>
+      </div>
+    </section>
+
+    <div class="screening-layout">
+      <section class="watch-panel" aria-label="影片播放器">
+        <div class="video-frame" id="player">
+          <video id="film" controls playsinline preload="none" poster="assets/opening-v2.png" aria-label="AI 的证明，第一集" aria-describedby="media-status">
+            <source src="episode01-v2-f790f5638a15.mp4" type="video/mp4">
+            <track id="zh-track" kind="subtitles" src="episode01_zh.vtt" srclang="zh" label="中文">
+            您的浏览器不支持 HTML5 视频。请使用支持 MP4 的现代浏览器打开。
+          </video>
+        </div>
+
+        <div class="transport">
+          <button class="play-button" id="play-toggle" type="button" aria-controls="film">
+            <span id="play-icon" aria-hidden="true">▶</span><span id="play-label">开始观看</span>
+          </button>
+          <div class="chapter-controls" aria-label="章节控制">
+            <button class="icon-button" id="previous" type="button" aria-label="上一章" title="上一章" disabled><span aria-hidden="true">←</span></button>
+            <button class="text-button" id="replay" type="button"><span aria-hidden="true">↻</span> 重播本章</button>
+            <button class="icon-button" id="next" type="button" aria-label="下一章" title="下一章"><span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+
+        <div class="now-playing">
+          <div class="now-label"><span class="chapter-kicker" id="now-number">第 01 章</span><span id="now-time">00:00</span></div>
+          <h2 id="now-title">先留下你的选择</h2>
+          <div class="chapter-progress" id="chapter-progress" role="progressbar" aria-label="本章播放进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+          <p class="status-line" id="media-status" role="status">正在载入影片…</p>
+        </div>
+
+        <details class="transcript-panel" id="transcript-panel">
+          <summary>查看同步文字</summary>
+          <p id="current-caption" aria-live="off">播放影片时，这里会显示当前旁白的文字。</p>
+          <a id="subtitle-download" href="episode01_zh.vtt" download="episode01_zh.vtt">下载中文字幕文件（VTT）<span aria-hidden="true"> ↓</span></a>
+        </details>
+
+        <section class="first-choice" aria-labelledby="choice-title">
+          <div>
+            <p class="eyebrow small">开场选择 <span>可选</span></p>
+            <h2 id="choice-title">先留下你的直觉。</h2>
+            <p id="choice-note" role="status">选一边，开始观看。也可以直接播放。</p>
+          </div>
+          <div class="choice-buttons" aria-label="你最初的选择">
+            <button class="choice-button" type="button" data-choice="幻觉" aria-pressed="false"><span>A</span> 幻觉</button>
+            <button class="choice-button" type="button" data-choice="神谕" aria-pressed="false"><span>B</span> 神谕</button>
+          </div>
+        </section>
+
+        <details class="viewing-help">
+          <summary>观看提示</summary>
+          <div class="help-content">
+            <p>视频控件支持音量、播放速度和全屏。章节可以自由跳转；播放器会尽量在当前浏览器中记住观看位置。</p>
+            <p>播放器区域内：<kbd>空格</kbd> 或 <kbd>K</kbd> 播放 / 暂停，<kbd>←</kbd> <kbd>→</kbd> 后退 / 前进 5 秒，<kbd>J</kbd> <kbd>L</kbd> 后退 / 前进 10 秒。<kbd>Tab</kbd> 移动焦点，<kbd>Enter</kbd> 激活按钮。</p>
+            <p id="subtitle-note">影片已内嵌中文字幕。可在“查看同步文字”中阅读当前旁白或下载字幕文件。</p>
+          </div>
+        </details>
+      </section>
+
+      <aside class="chapters-panel" aria-labelledby="chapters-title">
+        <div class="chapters-heading"><div><p class="eyebrow small">跟随证明的线索</p><h2 id="chapters-title">章节目录</h2></div><span class="chapter-count">12</span></div>
+        <p class="timing-note" id="timing-note">正在载入章节时间轴…</p>
+        <nav aria-label="影片章节"><ol id="chapter-list"></ol></nav>
+        <p class="chapters-footnote">按顺序看，也可以回到某一步。</p>
+      </aside>
+    </div>
+    <details class="viewing-help sources">
+      <summary>来源与延伸阅读</summary>
+      <div class="help-content">
+        <p>科学图像来源：<a href="https://openai.com/index/navier-stokes-solution/" target="_blank" rel="noopener noreferrer">OpenAI · On the Navier–Stokes Millennium Prize Problem</a>（2026 年 9 月 8 日）。图像用于本片对相关研究的介绍与讨论，权利归原权利人；本片不代表 OpenAI 官方出品或背书。</p>
+        <p>证明与检查：<a href="https://lean-lang.org/theorem_proving_in_lean4/Propositions-and-Proofs/" target="_blank" rel="noopener noreferrer">Lean 官方教材：命题与证明</a> · <a href="https://leanprover-community.github.io/mathematics_in_lean/C05_Elementary_Number_Theory.html" target="_blank" rel="noopener noreferrer">Mathematics in Lean：初等数论</a>。</p>
+        <p>素数纪录：<a href="https://www.mersenne.org/primes/?press=M136279841" target="_blank" rel="noopener noreferrer">GIMPS 原始发现公告</a>。</p>
+        <p><a href="../../">返回作品目录</a> · <a href="episode01-v2-f790f5638a15.mp4" download>下载完整影片（MP4）</a></p>
+      </div>
+    </details>
+  </main>
+
+  <footer><span>SIEP <span class="brand-divider">/</span> 智教版</span><span>AI 的证明 · 第一集</span></footer>
+  <noscript><p class="noscript">请启用 JavaScript 使用章节导航。视频仍可通过原生控件播放。</p></noscript>
+</body>
+</html>

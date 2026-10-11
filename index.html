@@ -39,6 +39,9 @@
     .cover { position:relative; height:232px; overflow:hidden; background:radial-gradient(ellipse at 70% 70%,#3c5743 0,transparent 60%),#202d25; }
     .cover::before { content:""; position:absolute; width:200px; height:200px; border:1px solid #8fa885; border-radius:50%; left:calc(50% - 121px); top:15px; }
     .cover::after { content:""; position:absolute; width:134px; height:134px; border:1px solid var(--accent); border-radius:50%; left:calc(50% - 18px); top:77px; background:#c8ee9c0c; }
+    .proof-cover::before, .proof-cover::after { display:none; }
+    .proof-cover img { width:100%; height:100%; object-fit:cover; }
+    .proof-cover .cover-label { padding:3px 7px; background:#101412d9; border-radius:3px; }
     .cover-label { position:absolute; left:25px; top:20px; font-size:11px; letter-spacing:.16em; color:#d4e0cf; }
     .cover-dot { position:absolute; left:calc(50% + 106px); top:147px; width:11px; height:11px; background:var(--accent); border-radius:50%; }
     .work-body { padding:27px 28px 25px; }
@@ -76,9 +79,8 @@
         <p class="intro">让知识动起来，让好奇心走得更远。<br>从一段动画、一次交互，开始理解一个新世界。</p>
       </section>
       <section id="catalog" aria-labelledby="catalog-title">
-        <div class="section-head"><h2 id="catalog-title">作品目录</h2><span class="count">01 / 教育作品</span></div>
+        <div class="section-head"><h2 id="catalog-title">作品目录</h2><span class="count">02 / 教育作品</span></div>
         <div class="catalog">
-          <!-- 新作品：复制下方 article，更新链接、标题、分类和简介。 -->
           <article class="work">
             <a class="work-link" href="works/limits/index.html" aria-labelledby="limits-title" aria-describedby="limits-description">
               <div class="cover" aria-hidden="true"><span class="cover-label">SIEP / 001</span><span class="cover-dot"></span></div>
@@ -87,6 +89,17 @@
                 <h3 id="limits-title">差一点，还是等于？</h3>
                 <p class="description" id="limits-description">七幕 Manim 数学电影，从 0.999… 到阿基里斯追龟，一步步看懂极限。完整中文讲解与字幕，支持章节跳转和重播。</p>
                 <div class="open"><span>观看新版电影</span><span class="arrow" aria-hidden="true">↗</span></div>
+              </div>
+            </a>
+          </article>
+          <article class="work">
+            <a class="work-link" href="works/ai-proof-episode-1/" aria-labelledby="ai-proof-title" aria-describedby="ai-proof-description">
+              <div class="cover proof-cover" aria-hidden="true"><img src="works/ai-proof-episode-1/assets/opening-v2.png" alt="" loading="lazy"><span class="cover-label">SIEP / 002</span></div>
+              <div class="work-body">
+                <p class="meta"><span>AI · 数学</span><span>第一集</span><span>11 分 48 秒</span></p>
+                <h3 id="ai-proof-title">AI 的证明：幻觉还是神谕？</h3>
+                <p class="description" id="ai-proof-description">跟随一份证明，看看它究竟凭什么让人相信。从素数到 Lean，探索推理与检查之间的关系。完整中文旁白、字幕与十二章导航。</p>
+                <div class="open"><span>影片待上传 · 查看介绍</span><span class="arrow" aria-hidden="true">↗</span></div>
               </div>
             </a>
           </article>
