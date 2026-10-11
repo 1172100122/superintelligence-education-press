@@ -47,7 +47,7 @@
       video.dataset.mediaLoading = 'false';
       video.dataset.mediaFailed = 'true';
       status.classList.add('is-error');
-      announce('影片文件尚在上传，请稍后再来；若已上传，请检查网络后刷新页面重试。');
+      announce('影片下载未完成。请检查网络后刷新页面重试。');
       video.dispatchEvent(new Event('mediafailed'));
     }
   })();

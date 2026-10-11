@@ -27,7 +27,7 @@
 
 [在线观影](https://1172100122.github.io/superintelligence-education-press/works/ai-proof-episode-1/) · [下载 MP4](https://1172100122.github.io/superintelligence-education-press/works/ai-proof-episode-1/episode01-v2-f790f5638a15.mp4) · [中文字幕](works/ai-proof-episode-1/episode01_zh.vtt)
 
-影片文件待上传，网页暂不能播放。上传完成后支持章节跳转、重播与同步文字。研究图像和延伸阅读的来源见播放页；第三方图像的权利归原权利人。
+支持章节跳转、重播与同步文字。研究图像和延伸阅读的来源见播放页；第三方图像的权利归原权利人。
 
 ## 关于这次制作
 
